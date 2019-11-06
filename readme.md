@@ -60,11 +60,11 @@ The API can be accessed by sending a request to the URL: `https://tweet-inspecto
 
 **API call through curl**
 
-```python3
+```
 curl -i -H "Content-Type: application/json" -X POST -d "[{\"text\":\"वे एक संवेदनशील लेखक, सचेत नागरिक, कुशल वक्ता तथा सुधी (विद्वान) संपादक थे\", \"value\": 0}]" https://tweet-inspector-api-v2.herokuapp.com/predict
 ```
 
-**API call through curl**
+**API call through python requests module**
 
 ```python3
 import requests
