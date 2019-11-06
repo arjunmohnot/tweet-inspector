@@ -34,4 +34,30 @@ The models were tested on the test set derived from the data set described in th
 
 ![Bag of Words Loss Variation through all epochs](images/model_loss.png "Bag of Words Loss Variation through all epochs")
 
+## The Interface
+
+The interface has been created using HTML, CSS on the frontend and Flask at the backend. The web application has been deployed on Heroku and can be accessed [here](https://tweet-inspector-app.herokuapp.com/).
+
+We have also created an Application Programming Interface (API) for the models using Flask that is free to access and can be integrated with any programming language. The API has been designed using the concepts of REST. It accepts the tweet data from the user in JSON format and returns the predictions made by all users in JSON format. 
+
+### Using the API
+
+`
+### Using the API
+
+`
+The API can be accessed by sending a request to the URL:` `https://tweet-inspector-api-v2.herokuapp.com`
+
+- **API call through curl**
+
+``curl -i -H "Content-Type: application/json" -X POST -d "[{\"text\":\"वे एक संवेदनशील लेखक, सचेत नागरिक, कुशल वक्ता तथा सुधी (विद्वान) संपादक थे\", \"value\": 0}]" https://tweet-inspector-api-v2.herokuapp.com/predict``
+
+- **API call through curl**
+
+``python3
+import requests
+r = requests.post(api_url, data = json_inp, headers = {'Content-Type': 'application/json'})
+print(r.json())``
+
+
 
