@@ -81,7 +81,7 @@ print(r.json())
 
 This was a semester project made at Bennett University by our team of three members. The people that contributed in making this project:
 - [Gagan Talreja](https://github.com/gagantalreja)
-- [Aditya Bhardwaj]()
+- [Aditya Bhardwaj](https://github.com/virgoady7)
 - Abhinav Rastogi
 
 Our Project Mentor: [Dr. Sridhar Swaminathan](https://github.com/sridarah)
