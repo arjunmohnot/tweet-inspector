@@ -1,12 +1,9 @@
 # Tweet Inspector
 
----
-
 ## Introduction
 
 Online social networks are likewise generally utilized by abusers, for spreading hate or some propaganda about world events or local affairs, politics or religion, interests, affiliations, organizations, products, people. Numerous culprits 'take cover' behind the way that they will most likely be unable to be promptly distinguished, making statements that they wouldn't think about saying eye to eye, which could be viewed as fainthearted. Online maltreatment takes a few structures, and unfortunate casualties are not limited to open figures. They can carry out any responsibility, be of all ages, sex, sexual direction or social or ethnic foundation, and live anyplace. With the growth of social media platforms in the 21st century, it has become necessary for any individual or organization to maintain a good social reputation. Any kind of oppressive and abusive posts against someone can result in the decline of their social reputation. Such abusive posts, in the worst case, can also result in social riots and other events that can harm the peace of a region. This problem needs a good solution. Many social media platforms like Instagram have developed and deployed systems that can detect abusive and hate inducing posts and block the account that they have been posted. But we found that there are no systems or fewer systems that can detect abuses in Indian languages. Hindi being the most popular Indian language, we decided to create a system using machine learning algorithms that can classify tweets in Hindi as abusive and not abusive.
 
-----
 
 ## Implementation
 
@@ -18,7 +15,7 @@ We have made use of frameworks with python and JavaScript condition to make AI m
 
 Firstly the data set was cleaned by removing stop words, special characters, hashtags, punctuations, blanks. As we only needed Hindi tweets, we removed the tweets that contained less than 40% Devanagari characters. Two machine learning models were used namely Multinomial Naïve Bayes and Logistic Regression. To train these models we first created a term frequency-inverse document frequency vector for the data set and fed this tf-idf matrix as input to these algorithms. We also used a deep learning Sequential Model using the Bag of words approach. We created a bag of words for the given data set using Keras Tokenizer and fed it as input to the model. The model has two layers. The first layer has 512 nodes and the second layer has two. Relu activation function has been used in the first layer and the SoftMax activation on the second layer. 
 
----
+
 
 ## Testing and Results
 
