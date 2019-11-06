@@ -45,7 +45,7 @@ We have also created an Application Programming Interface (API) for the models u
 ### Using the API
 
 `
-The API can be accessed by sending a request to the URL:` `https://tweet-inspector-api-v2.herokuapp.com`
+The API can be accessed by sending a request to the URL:` `https://tweet-inspector-api-v2.herokuapp.com/predict`
 
 - **API call through curl**
 
@@ -55,12 +55,19 @@ The API can be accessed by sending a request to the URL:` `https://tweet-inspect
 
 ```python3
 import requests
+import json
 
-txt = "वे एक संवेदनशील लेखक, सचेत नागरिक, कुशल वक्ता तथा सुधी (विद्वान) संपादक थे"
+txt = "वे एक संवेदनशील लेखक, सचेत नागरिक, कुशल वक्ता तथा सुधी संपादक थे"
 value = 0
 json_inp = json.dumps([{'text': txt, 'value': value}])
 r = requests.post("https://tweet-inspector-api-v2.herokuapp.com/predict", data = json_inp, headers = {'Content-Type': 'application/json'})
-print(r.json())``
+print(r.json())
+```
+
+
+## THE GUI
+
+
 
 
 
